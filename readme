@@ -1,5 +1,6 @@
 /* Grid */
 .gridS24, .gridB24 { position: relative; margin: 0 auto; }
+.gridB24::after, .gridS24::after { clear: both; content: ''; display: block; zoom: 1;}
 .gridS24 { width: 960px; }
 .gridB24 { width: 1200px; }
 .gridS24 [class*="gridS"], .gridB24 [class*="gridB"] { display: inline; float: left; width: auto; margin-left: 12px; margin-right: 12px; }
@@ -10,3 +11,86 @@
 .gridS01 { min-width: 17px; max-width:40px; }.gridS02 { min-width: 58px; max-width:80px; }.gridS03 { min-width: 99px; max-width:120px; }.gridS04 { min-width: 140px; max-width:160px; }.gridS05 { min-width: 181px; max-width:200px; }.gridS06 { min-width: 222px; max-width:240px; }.gridS07 { min-width: 263px; max-width:280px; }.gridS08 { min-width: 304px; max-width:320px; }.gridS09 { min-width: 345px; max-width:360px; }.gridS10 { min-width: 386px; max-width:400px; }.gridS11 { min-width: 427px; max-width:440px; }.gridS12 { min-width: 468px; max-width:480px; }.gridS13 { min-width: 509px; max-width:520px; }.gridS14 { min-width: 550px; max-width:560px; }.gridS15 { min-width: 591px; max-width:600px; }.gridS16 { min-width: 632px; max-width:640px; }.gridS17 { min-width: 673px; max-width:680px; }.gridS18 { min-width: 714px; max-width:720px; }.gridS19 { min-width: 755px; max-width:760px; }.gridS20 { min-width: 796px; max-width:800px; }.gridS21 { min-width: 837px; max-width:840px; }.gridS22 { min-width: 878px; max-width:880px; }.gridS23 { min-width: 919px; max-width:920px; }
 /* Grid 1200 */
 .gridB01 { min-width: 27px; max-width:50px; }.gridB02 { min-width: 78px; max-width:100px; }.gridB03 { min-width: 129px; max-width:150px; }.gridB04 { min-width: 180px; max-width:200px; }.gridB05 { min-width: 231px; max-width:250px; }.gridB06 { min-width: 282px; max-width:300px; }.gridB07 { min-width: 333px; max-width:350px; }.gridB08 { min-width: 384px; max-width:400px; }.gridB09 { min-width: 435px; max-width:450px; }.gridB10 { min-width: 486px; max-width:500px; }.gridB11 { min-width: 537px; max-width:550px; }.gridB12 { min-width: 588px; max-width:600px; }.gridB13 { min-width: 639px; max-width:650px; }.gridB14 { min-width: 690px; max-width:700px; }.gridB15 { min-width: 741px; max-width:750px; }.gridB16 { min-width: 792px; max-width:800px; }.gridB17 { min-width: 843px; max-width:850px; }.gridB18 { min-width: 894px; max-width:900px; }.gridB19 { min-width: 945px; max-width:950px; }.gridB20 { min-width: 996px; max-width:1000px; }.gridB21 { min-width: 1047px; max-width:1050px; }.gridB22 { min-width: 1098px; max-width:1100px; }.gridB23 { min-width: 1149px; max-width:1150px; }
+
+
+
+<!-- 960 -->
+<div class="gridS24">
+    <div class="gridS22" style="background: red;">
+    test1
+    </div>
+    <div class="gridS02" style="background: green;">
+    test2
+    </div>
+</div>
+<div class="gridS24">
+    <div class="gridS08" style="background: red;">
+    test1
+    </div>
+    <div class="gridS08" style="background: green;">
+    test2
+    </div>
+    <div class="gridS08" style="background: blue;">
+    test3
+    </div>
+</div>
+<!-- 960 No Space/Margin -->
+<div class="gridS24 gridNS">
+    <div class="gridS22" style="background: red;">
+    test1
+    </div>
+    <div class="gridS02" style="background: green;">
+    test2
+    </div>
+</div>
+<div class="gridS24 gridNS">
+    <div class="gridS08" style="background: red;">
+    test1
+    </div>
+    <div class="gridS08" style="background: green;">
+    test2
+    </div>
+    <div class="gridS08" style="background: blue;">
+    test3
+    </div>
+</div>
+<!-- 1200 -->
+<div class="gridB24">
+    <div class="gridB22" style="background: red;">
+    test1
+    </div>
+    <div class="gridB02" style="background: green;">
+    test2
+    </div>
+</div>
+<div class="gridB24">
+    <div class="gridB08" style="background: red;">
+    test1
+    </div>
+    <div class="gridB08" style="background: green;">
+    test2
+    </div>
+    <div class="gridB08" style="background: blue;">
+    test3
+    </div>
+</div>
+<!-- 1200 No Space/Margin -->
+<div class="gridB24 gridNS">
+    <div class="gridB22" style="background: red;">
+    test1
+    </div>
+    <div class="gridB02" style="background: green;">
+    test2
+    </div>
+</div>
+<div class="gridB24 gridNS">
+    <div class="gridB08" style="background: red;">
+    test1
+    </div>
+    <div class="gridB08" style="background: green;">
+    test2
+    </div>
+    <div class="gridB08" style="background: blue;">
+    test3
+    </div>
+</div>
