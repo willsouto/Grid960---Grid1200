@@ -4,7 +4,7 @@
 .gridB24::after, .gridS24::after { clear: both; content: ''; display: block; zoom: 1;}
 .gridS24 { width: 960px; }
 .gridB24 { width: 1200px; }
-.gridS24 [class*="gridS"], .gridB24 [class*="gridB"] { display: inline; float: left; width: auto; margin-left: 12px; margin-right: 12px; }
+.gridS24 [class*="gridS"], .gridB24 [class*="gridB"] { position:relative; display: inline; float: left; width: auto; margin-left: 12px; margin-right: 12px; }
 .gridNS [class*="grid"] { margin: 0px; width: 100%; }
 .gridS24 > [class*="grid"]:first-of-type, .gridB24 > [class*="grid"]:first-of-type { margin-left: 0px; }
 .gridS24 > [class*="grid"]:last-of-type, .gridB24 > [class*="grid"]:last-of-type { margin-right: 0px; }
